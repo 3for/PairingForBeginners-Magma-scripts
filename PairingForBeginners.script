@@ -1474,7 +1474,7 @@ fADD:=function(P,Q);
 lambda:=(Q[2]-P[2])/(Q[1]-P[1]);
 c:=P[2]-lambda*P[1];
 l:=F!(y-(lambda*x+c));
-v:=F!(x-(lambda^2-P[1]-P[2]));
+v:=F!(x-(lambda^2-P[1]-Q[1])); //x3=lamda^2-x1-x2,P[1] is x1, Q[1] is x2.
 return F!(l/v);
 end function;
 
